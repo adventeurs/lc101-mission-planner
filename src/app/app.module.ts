@@ -7,14 +7,14 @@ import { ExperimentsComponent } from "./components/experiments.component";
 import { EquipmentComponent } from "./components/equipment.component";
 import { CrewComponent } from "./components/crew.component";
 
+const components = [
+  HeaderComponent,
+  ExperimentsComponent,
+  EquipmentComponent,
+  CrewComponent
+];
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    ExperimentsComponent,
-    EquipmentComponent,
-    CrewComponent
-  ],
+  declarations: [AppComponent, ...components],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent]
